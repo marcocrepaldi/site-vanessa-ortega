@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
       subject: `Novo contato pelo site – ${name}`,
       html: `
         <div style="font-family:sans-serif;max-width:600px;margin:0 auto">
-          <h2 style="color:#57140d">Novo contato – vanessaortega.com.br</h2>
+          <h2 style="color:#744e60">Novo contato – vanessaortega.com.br</h2>
           <p><strong>Nome:</strong> ${name}</p>
           <p><strong>E-mail:</strong> <a href="mailto:${email}">${email}</a></p>
           <p><strong>Telefone:</strong> ${phone || "—"}</p>
