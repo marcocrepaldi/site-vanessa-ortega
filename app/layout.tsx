@@ -14,6 +14,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
+
         {children}
         <a
           href="https://wa.me/5511955541470"

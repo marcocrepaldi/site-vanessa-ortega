@@ -121,7 +121,7 @@ function About() {
           </p>
           <p>
             Com uma sólida trajetória no mercado financeiro, repleta de
-            experiências e conexões valiosas, Vanessa traz uma visão
+            experiências e conexões valiosas, Vanessa traz uma vision
             humana e precisa para quem quer tomar as rédeas da própria
             vida financeira.
           </p>
@@ -132,6 +132,25 @@ function About() {
             verdadeiramente focada nos seus objetivos.
           </p>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function FinancialStudyCTA() {
+  return (
+    <section className="home-cta-section">
+      <div className="home-cta-inner">
+        <span className="home-cta-tag">Novidade Exclusiva</span>
+        <h2 className="home-cta-title">Quanto falta para sua liberdade financeira?</h2>
+        <p className="home-cta-text">
+          Visualize sua jornada e descubra como atingir seus objetivos de patrimônio 
+          e renda vitalícia com nosso novo simulador exclusivo de curva financeira.
+        </p>
+        <Link href="/saiba-mais" className="home-cta-btn">
+          <span>Simular Minha Curva Agora</span>
+          <ArrowUpRight size={22} />
+        </Link>
       </div>
     </section>
   );
@@ -163,7 +182,9 @@ export default function Home() {
       <Hero />
       <FeatureCards />
       <About />
+      <FinancialStudyCTA />
       <ContactBand />
     </main>
   );
 }
+

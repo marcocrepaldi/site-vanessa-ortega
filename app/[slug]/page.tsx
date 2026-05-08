@@ -29,10 +29,19 @@ export default async function ServicePage({
         <div>
           <h2>{service.title}</h2>
           <p>{service.summary}</p>
+          
+          {slug === "diagnostico" && (
+            <p>
+              Estamos criando a <strong>CASA</strong>, nossa nova plataforma exclusiva que vai transformar 
+              a maneira como você gerencia sua vida financeira. Um espaço pensado para acolher, 
+              organizar e impulsionar seus objetivos com tecnologia e humanidade.
+            </p>
+          )}
+
           <p>
-            Em uma próxima etapa, esta página pode receber o texto completo do
-            WordPress original, depoimentos, perguntas frequentes e um formulário
-            conectado para conversão.
+            Para saber mais sobre como este serviço ou nossa nova plataforma podem 
+            transformar sua realidade financeira, entre em contato conosco. 
+            Estamos prontos para desenhar a melhor estratégia para os seus objetivos.
           </p>
         </div>
       </section>
