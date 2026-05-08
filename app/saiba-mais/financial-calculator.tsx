@@ -62,7 +62,7 @@ export function FinancialCalculator() {
         {/* Left Column: Form Card */}
         <div className="calc-card">
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '32px' }}>
-            <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: '#744e60', display: 'flex', alignItems: 'center', justifyCenter: 'center', color: '#fff', justifyContent: 'center' }}>
+            <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: '#744e60', display: 'flex', alignItems: 'center', color: '#fff', justifyContent: 'center' }}>
               <Calculator size={20} />
             </div>
             <h3 style={{ fontSize: '24px', fontWeight: 700 }}>Configurações</h3>
@@ -213,7 +213,7 @@ export function FinancialCalculator() {
                             padding: '12px 16px'
                           }}
                           itemStyle={{ color: '#744e60', fontWeight: 'bold' }}
-                          formatter={(value: number) => [formatCurrency(value), "Patrimônio"]}
+                          formatter={(value: any) => [formatCurrency(Number(value || 0)), "Patrimônio"]}
                           labelFormatter={(label) => `Aos ${label} anos`}
                         />
                         <Area 
